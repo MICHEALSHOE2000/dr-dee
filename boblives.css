@@ -5,7 +5,7 @@ body {
     margin:0;
 }
 .navbar {
-    background:#173459;
+    background:#F78E01;
 }
 .logo{
 padding:0;
@@ -85,10 +85,11 @@ color: #f5b042;
   text-decoration: none;  
   }
   .definition{font-family: 'Arvo', serif;
- color:red; }
+ color:red;
+ margin:3px; }
  .bph{font-size:1.5em;
  padding:3px;
- margin:6px
+ margin:10px
  }
 .problem{
 display:flex;
@@ -136,12 +137,13 @@ height:auto;}
          margin-right:5px;
          
       }
-      .symptons > div {
+      .box {
          background:none;
          color:black;
-         width: 30%;
+         width: 100%;
          height: auto;
-         margin: 5px;
+         margin: 3px;
+         padding:3px;
          border: 3px solid #f5b042;
         font-weight: 900;
          font-size:20px;
@@ -199,7 +201,7 @@ font-weight:bolder; text-align:center;}
 span.Ad{color:red;}
 span.side{color:red;
 background-color:yellow;}
-span.performance{font-size:15px;}
+span.performance{font-size:13px;}
 span.ejaculation{font-size:16px;}
 .sample{max-width:100%;}
 .explain{text-align:justify;
@@ -212,7 +214,8 @@ font-weight:900;}
 .blogHead{text-decoration:none;
 color:#0000ff;
 font-size:20px;
-font-weight:bold;}
+font-weight:bold;
+margin:5px;}
 .natural{font-family:'Arvo', seriff;
 text-align:justify;} 
 * {
@@ -706,7 +709,32 @@ text-align:center;
 font-family: 'Arvo', serif;}
 .hassle{
 color:red;}
-
+.appointment{
+  font-family: bold 11px sans-serif;
+  text-decoration:none;
+  border:1px solid red;
+  border-style:light;
+  border-radius:15px;
+  padding:15px 30px 15px 30px;
+  font-size: 20px;
+  outline: red;
+  background-color: #f47354;
+  margin:20px;
+  color:white;
+  text-align:center;
+ }
+  .dot{
+    height: 90px;
+    width: 90px;
+    margin-top:-20px;
+    background-color: #f47354;;
+    border-radius: 50%;
+    display: inline-block;
+    text-align:center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
 
 
 .product{
@@ -842,3 +870,23 @@ margin-right:5px;
  .blueprints{font-size:1.2em;}
  .gfonts{font-family: 'Arvo', serif;
  text-align:center;}
+ .common{
+  color:#853518;
+  margin:10px;
+ font-family: 'Arvo', serif;}
+ .help{
+margin:10px;
+ font-family: 'Arvo', serif;}
+ .checked {
+  color: orange;
+}
+.game{
+font-family: 'Arvo', serif;
+}
+.hame{font-family:'Arvo', serif;
+line-height:35px;
+margin:5px;
+}
+.team{
+margin:5px;
+line-height:30px;}
