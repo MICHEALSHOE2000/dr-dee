@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TVCT9D2');</script>
-<!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11356572586"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11356572586');
+</script>
+<!-- Event snippet for button click (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11356572586/crRECKrCqekYEKqXnqcq',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+ 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,12 +45,9 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
 <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
-    <div class="whatsapp-icon">
-      <a href="https://api.whatsapp.com/send?phone=2349151625737&text=Good%20day%20Are%20you%20interested%20in%20getting%20your%20d%20fibroid%20shrink." target="_blank">
-        <img src="Img/download.png" alt="WhatsApp Icon">
-       <div class="overlay-text">Chat with a Gynaecologist <br>How can we help you?</div>
-      </a>
-    </div>
+   <a class="whats-app" href="https://api.whatsapp.com/send?phone=2349151625737&text=Good%20day%20Are%20you%20interested%20in%20getting%20your%20d%20fibroid%20shrink." target="_blank">
+      <i class="fa fa-whatsapp  my-float"></i>
+    </a>
       <link rel ="canonical" href="blives.xyz/index.html"/>
    <link rel="stylesheet" type="text/css" href="boblives.css">
      <script stype="text/javascript">
@@ -124,6 +142,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <li>Improve energy level</li>
   <li>Supports strong, healthy uterus and enhances healthy ovary function by its unique cleansing and anti-inflammatory properties</li>
 </ol></b>
+       <div id="popup-container">
+        <div id="popup-content">
+          <b>Shola From Abuja Just ordered Three Bottles of the fibroid solution</b>
+        </div>
+    </div>
 <img src="img/product.jpg"/>
          <a href="https://api.whatsapp.com/send?phone=2349151625737&text=Good%20day%2C%20I%20want%20to%20order%20the%20fibroid%20shrink%20solution%20capsules." target="_blank">
 <img src="img/whatsapp.png" alt="order through whatsapp"><br></a>
@@ -284,9 +307,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="therapy"><center> "FIBROID  SOLUTION"-A 21-Day Therapy For Removing FIBROID & Cysts</center></h2>
     <h6 class="bph"><b><center><strong>Recommended by Over 85% Of It Users</strong></center></center></b></h6>
     <div class="form-container">
-    <form id="contactform" action="https://formspree.io/f/xeqvnlve"
-    name="my" onsubmit="return(validate())" method="post">
-    
+    <form action="https://formspree.io/f/xeqvnlve"
+  method="POST">  
     <div class="input-cnt">
     <i class="material-icons">person</i>
     <input type="text" placeholder="Name" name="Name" />
@@ -361,12 +383,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <input type="radio" name="amount" value="4bottle" id="4bottle" />
     <label for="4bottle"><span></span><b> Four bottles of the FIBROID  SOLUTION &#8358 60,000</b> </label>
-    
-    
-    <div class="input-cnt">
-    <input type="submit" />
-    </div>
-    
+    <input type="hidden" name="conversion" value="button_click">
+       <center> <button type="submit" id="submit-button" class="call-to-action-button" onclick="gtag_report_conversion();">GET MY PACK NOW</button> </center>
+     </div>
     </form></div>
     <div style="background-color: lightgrey; height: 350px; margin: 20px; border-radius: 25px ; padding: 25px;"><br>
     <div class="percent"><span class="dot"></span><br><br><br><br>
@@ -399,6 +418,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       </div>
       </div>
+  <script src="yourscript.js"></script>
          <footer class="footer-distributed">
       
       <div class="footer-left">
