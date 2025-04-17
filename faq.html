@@ -34,3 +34,75 @@
             cursor: pointer;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            color: #2980b9;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            color: #555;
+        }
+        .toggle-icon {
+            font-size: 16px;
+            transition: transform 0.3s;
+        }
+        .active .toggle-icon {
+            transform: rotate(180deg);
+        }
+        .cta-button {
+            display: block;
+            text-align: center;
+            background: #27ae60;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is this product natural and safe? <i class="fas fa-chevron-down toggle-icon"></i></div>
+            <div class="faq-answer">Yes, our prostate health product is 100% natural, made from premium herbal ingredients, and has no harmful side effects.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How long before I see results? <i class="fas fa-chevron-down toggle-icon"></i></div>
+            <div class="faq-answer">Most users start noticing significant improvements within 2-4 weeks of consistent use.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How do I take the supplement? <i class="fas fa-chevron-down toggle-icon"></i></div>
+            <div class="faq-answer">Take 2 capsules daily—one in the morning and one at night—with water or a light meal.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is there a money-back guarantee? <i class="fas fa-chevron-down toggle-icon"></i></div>
+            <div class="faq-answer">Yes! We offer a 30-day money-back guarantee if you are not satisfied with the results.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I place an order? <i class="fas fa-chevron-down toggle-icon"></i></div>
+            <div class="faq-answer">Click the button below to order online or call our customer service for assistance.</div>
+        </div>
+        
+        <a href="#order" class="cta-button">Order Now</a>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                item.parentNode.classList.toggle('active');
+                let answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
