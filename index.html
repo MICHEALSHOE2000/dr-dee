@@ -34,3 +34,296 @@
 
   .main-nav {
     display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .main-nav > a,
+  .dropdown > a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #d0ffd0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .main-nav a:hover {
+    color: #ffffff;
+  }
+
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #2d512d;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    border-radius: 4px;
+    min-width: 200px;
+    z-index: 1001;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #d0ffd0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #3c6b3c;
+    color: #fff;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 22px;
+            color: #2c3e50;
+        }
+        .content p {
+            font-size: 16px;
+            color: #555;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .form-section {
+            padding: 20px;
+            background: #f0f0f0;
+            border-top: 1px solid #ddd;
+        }
+        .form-section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .form-section p.benefit {
+            background: #e0f7e9;
+            padding: 10px;
+            border-left: 4px solid #28a745;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .form-section input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .form-section button {
+            background: #28a745;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background: #218838;
+        }
+        .disclaimer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+        }
+        .site-footer {
+  background-color: #234123;
+  color: #e0ffe0;
+  padding: 50px 20px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-brand p {
+  font-size: 1rem;
+  margin: 4px 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-links div h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #caffca;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #d5ffd5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaffaa;
+  border-top: 1px solid #3c6d3c;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+    </style>
+</head>
+<body>
+<header class="sticky-header">
+  <div class="nav-container">
+    <div class="logo">🌿 Green Global Empire</div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+
+      <!-- Products Dropdown -->
+      <div class="dropdown">
+        <a href="#products">Products▾</a>
+        <div class="dropdown-content">
+          <a href="prostalin.html">Prostate Health</a>
+          <a href="#diabetes">Diabetes Health</a>
+          <a href="#liver">Liver Detox</a>
+          <a href="#fertility"> Fertility</a>
+          <a href="#hepatitis">Hepatitis</a>
+          <a href="#immunity">Immune Booster</a>
+          <a href="#ulcer">Ulcer Treatment</a>
+          <a href="#bp">Blood Pressure Support</a>
+          <a href="#skin">Skin & Beauty</a>
+          <a href="#wellness">Total Wellness Pack</a>
+        </div>
+      </div>
+
+      <a href="#blog">Blog</a>
+      <a href="#mlm">Multi Level Marketing</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="content">
+    <h1>Free Prostate Wellness Guide Reveals: 3 Natural Ways to Reduce Pain & Frequent Urination</h1>
+    <p>Over 2,000 Nigerian men have used these herbal strategies to support a healthy, comfortable prostate — without drugs or surgery.</p>
+    <img src="img/bk.png" alt="Herbal Prostate book">
+  </div>
+  <div class="form-section">
+    <h2>Get Instant Access to This FREE Prostate Wellness Guide</h2>
+    <p class="benefit">✅ Discover 3 natural herbs to shrink the prostate naturally</p>
+    <p class="benefit">✅ Learn how to stop painful urination, dribbling & midnight urge</p>
+    <p class="benefit">✅ Sent directly to your WhatsApp or Email</p>
+    <form action="https://formspree.io/f/mayavdlg" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" minlength="11" pattern="\d{11}" required>
+      <input type="email" name="email" placeholder="Email Address">
+      <button type="submit">Yes, Send Me the Free Guide</button>
+    </form>
+    <p class="disclaimer">This information is for educational purposes only and does not substitute for medical advice. By submitting, you agree to receive follow-up contact via WhatsApp or email.</p>
+  </div>
+</div>
+
+<!-- 📌 Footer Reminder -->
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>Green Health empire</h3>
+      <p>📞 (+234)-903-792-5799 </p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Complan</a></li>
+          <li><a href="#">Shops</a></li>
+          <li><a href="#">Core Values</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Business</h4>
+        <ul>
+          <li><a href="#">Network Marketing</a></li>
+          <li><a href="#">MLM Company</a></li>
+          <li><a href="#">Direct Selling</a></li>
+          <li><a href="#">Distribution Business</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Help & Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Green Health . All Rights Reserved.</p>
+  </div>
+</footer>
