@@ -1,0 +1,36 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #2d512d;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #dfffd6;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .main-nav > a,
+  .dropdown > a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #d0ffd0;
