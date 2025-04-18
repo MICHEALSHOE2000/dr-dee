@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thank You - [Brand Name]</title>
+    <link rel="stylesheet" href="qstyles.css"> <!-- Link to external CSS file -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16892089101"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-16892089101');
+</script>
+
+</head>
+<body>
+
+    <!-- Header Section with Brand Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Brand Logo" class="brand-logo">
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="thank-you-message">
+        <h1>Thank You for Your Submission!</h1>
+        <p class="confirmation-message">Someone will call you shortly.</p>
+        <p class="callback-time">Estimated callback time: 5-10 minutes.</p>
+        
+        <!-- Call to Action -->
+        <div class="cta-container">
+            <p>For faster service, <strong>save our number!</strong></p>
+            <button class="cta-btn" onclick="saveNumber()">Save Our Number</button>
+        </div>
+        
+        <!-- WhatsApp Button -->
+        <div class="whatsapp-btn-container">
+            <a href="https://wa.me/2349037925799" target="_blank" class="whatsapp-btn">
+                Chat with us on WhatsApp
+            </a>
+        </div>
+        
+        <!-- Subtle Animation (Ringing Phone Icon or Checkmark) -->
+        <div class="animation-container">
+            <div class="checkmark-icon"></div> <!-- Placeholder for checkmark or ringing phone animation -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 [Brand Name]. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts (for future use, like animations or further interactivity) -->
+    <script src="qscripts.js"></script> <!-- Link to external JS file -->
+</body>
+</html>
