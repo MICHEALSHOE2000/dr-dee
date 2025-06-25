@@ -298,7 +298,124 @@ border-color: rgba(255,255,255,0.1) !important;
   font-weight: 700;
   color: var(--mount-sinai-dark-blue);
 }
-
+/* Comments Section */
+.comments-section {
+    background: #fff;
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+  
+  .comments-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .comment, .reply {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .reply .avatar {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .comment-content {
+    background: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .comment-actions {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .comment-actions span {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .reply {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  /* Larger image shown inside a nested comment reply */
+  .reply-photo {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .write-comment {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+  }
+  
+  .write-comment input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #f2f2f2;
+  }
+  
+  .write-comment button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #ff5c5c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .toast {
+    display: none;
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    animation: fadeOut 3s forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+  }
+  #fake-order-popup {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #003366;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 0.95rem;
+  }
+  
 .testimonial {
   font-style: italic;
   color: #555;
